@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FreeMesh</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/freemesh.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="container">
+	<header>
+		<div class="logo">
+			<img src="images/freemesh-100h.png" alt="FreeMesh">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="network.html">Network Settings</a></li>
+				<li><a href="mesh.html">Mesh Settings</a></li>
+			</ul>
+		</div>
+	</header>
+    <div class="row">
+        <h3>Mesh Settings</h3>
+		<h4>Access Point Mode</h4>
+			AP Mode: <br>
+			<select name="ap_mode">
+				<option value="dbd_mode">Disabled</option>
+				<option value="wc_mode">Wireless Client Mode</option>
+				<option value="wb_mode">Wireless Bridge</option>
+				<option value="mwb_mode">Multi-point Bridge</option>
+				<option value="wds_ap_mode">WDS AP </option>
+			</select>
+		<h4>Wirless Settings ( 2.4Ghz )</h4>
+			Enable Wireless: <input type="checkbox" name="enable_wireless"><br>
+			Wireless Network Name (SSID): <br>
+			<input type="text" name="SSID_2_4"><br>
+			Broadcast SSID: <input type="checkbox" name="ssid_broadcast"><br>
+			Security Mode: <br>
+			<select name="sec_mode">
+			  <option value="open">Open</option>
+			  <option value="wep">WEP</option>
+			  <option value="wpa">WPA/WPA2-PSK (TKIP/AES)</option>
+			  <option value="wpa2">WPA2-PSK (AES)</option>
+			</select>
+			<br>Pre-Shared Key: <br>
+			<input type="text" name="ssid_key"><br>
+			Wireless Mode: <br>
+			<select name="wl_mode_24">
+				<option value="0_24">B/G mixed</option>
+				<option value="1_24">B only</option>
+				<option value="4_24">G only</option>
+				<option value="6_24" selected="selected">N only</option>
+				<option value="7_24">G/N mixed</option>
+				<option value="9_24">B/G/N mixed</option>
+			</select>
+		<h4>Wirless Settings ( 5.0Ghz )</h4>
+			Enable Wireless: <input type="checkbox" name="enable_wireless"><br>
+			Wireless Network Name (SSID): <br>
+			<input type="text" name="SSID_2_4"><br>
+			Broadcast SSID: <input type="checkbox" name="ssid_broadcast"><br>
+			Security Mode: <br>
+			<select name="sec_mode">
+			  <option value="open">Open</option>
+			  <option value="wep">WEP</option>
+			  <option value="wpa">WPA/WPA2-PSK (TKIP/AES)</option>
+			  <option value="wpa2">WPA2-PSK (AES)</option>
+			</select>
+			<br>Pre-Shared Key: <br>
+			<input type="text" name="ssid_key"><br>
+						Wireless Mode: <br>
+			<select name="wl_mode_50">
+				<option value="0_50">B/G mixed</option>
+				<option value="1_50">B only</option>
+				<option value="4_50">G only</option>
+				<option value="6_50" selected="selected">N only</option>
+				<option value="7_50">G/N mixed</option>
+				<option value="9_50">B/G/N mixed</option>
+			</select>
+    </div>
+  </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/freemesh.js"></script>
+</body>
+</html>

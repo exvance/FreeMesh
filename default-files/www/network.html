@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FreeMesh</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/freemesh.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="container">
+	<header>
+		<div class="logo">
+			<img src="images/freemesh-100h.png" alt="FreeMesh">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="network.html">Network Settings</a></li>
+				<li><a href="mesh.html">Mesh Settings</a></li>
+			</ul>
+		</div>
+	</header>
+    <div class="row">
+        <h3>Network Settings</h3>
+		<h4>WAN Settings</h4>
+			DHCP: <input type="checkbox" name="dhcp_wan" id="dhcp_wan"><br>
+			IP Address: <br>
+			<input type="text" name="ip_address_wan" id="ip_address_wan"><br>
+			Subnet Mask: <br>
+			<input type="text" name="subnet_mask_wan" id="subnet_mask_wan"><br>
+			Gateway Address: <br>
+			<input type="text" name="gateway_address_wan" id="gateway_address_wan"><br>
+		<h4>LAN Settings</h4>
+			IP Address: <br>
+			<input type="text" name="ip_address_lan" id="ip_address_lan"><br>
+			Subnet Mask: <br>
+			<input type="text" name="subnet_mask_lan" id="subnet_mask_lan"><br>
+		<h4>DHCP Server Settings</h4>
+			Enable DHCP Server: <input type="checkbox" name="dhcp_lan" id="dhcp_lan"><br>
+			Start IP Address: <br>
+			<input type="text" name="ip_address_start_dhcp" id="ip_address_start_dhcp"><br>
+			End IP Address: <br>
+			<input type="text" name="ip_address_end_dhcp" id="ip_address_end_dhcp"><br>
+			Lease Time: <br>
+			<input type="text" name="lease_time_lan" id="lease_time_lan"><br>
+
+		<input type="button" id="save_button" value="Save Settings">
+    </div>
+  </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/freemesh.js"></script>
+</body>
+</html>

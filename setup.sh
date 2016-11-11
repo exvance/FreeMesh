@@ -30,9 +30,9 @@ if [ -n "$1" ]; then
 fi
 
 umask 022
-git clone "$BUILDROOT_GIT" build
+git clone "$BUILDROOT_GIT" "$1"_freemesh
 
-cd build
+cd "$1"_freemesh
 
 [ ! -e feeds.conf ] && cp -v ../feeds.conf feeds.conf
 [ ! -e files ] && mkdir files
