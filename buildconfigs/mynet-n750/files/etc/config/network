@@ -8,22 +8,19 @@ config interface 'loopback'
 config globals 'globals'
 	option ula_prefix 'fdea:9a9c:c7e6::/48'
 
-config interface 'lan'
+config interface 'hnet0'
 	option ifname 'eth0.1'
-	option force_link '1'
-	option type 'bridge'
-	option proto 'static'
-	option ipaddr '10.0.0.1'
-	option netmask '255.255.255.0'
-	option ip6assign '60'
+	option proto 'hnet'
 
-config interface 'wan'
+config interface 'hnet1'
 	option ifname 'eth0.2'
-	option proto 'dhcp'
+	option proto 'hnet'
 
-config interface 'wan6'
-	option ifname 'eth0.2'
-	option proto 'dhcpv6'
+config interface 'hnet2'
+	option proto 'hnet'
+
+config interface 'hnet3'
+	option proto 'hnet'
 
 config switch
 	option name 'switch0'
@@ -39,8 +36,3 @@ config switch_vlan
 	option device 'switch0'
 	option vlan '2'
 	option ports '0t 5'
-
-config interface 'mesh'
-	option proto 'static'
-	option ipaddr '172.16.1.1'
-	option netmask '255.255.255.0'

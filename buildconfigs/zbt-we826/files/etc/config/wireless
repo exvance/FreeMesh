@@ -9,9 +9,9 @@ config wifi-device  radio0
 
 config wifi-iface
 	option device   radio0
-	option network  mesh
+	option network  hnet2
 	option mode     adhoc
-	option ssid     testnet
+	option ssid     'FreeMesh-Backhaul'
 	option bssid	'02:ca:ff:ee:ba:be'
 	option encryption none
 
@@ -25,8 +25,8 @@ config wifi-device mt7612e
 config wifi-iface
 	option device mt7612e
 	option ifname rai0
-	option network lan
+	option network hnet3
 	option mode ap
-	option ssid testnet1
+	option ssid FreeMesh
 	option encryption psk2
-	option key testnet1
+	option key FreeMesh

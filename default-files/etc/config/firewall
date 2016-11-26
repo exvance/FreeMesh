@@ -9,6 +9,10 @@ config defaults
 config zone
 	option name		lan
 	list   network		'lan'
+	list   network		'hnet0'
+	list   network		'hnet1'
+	list   network		'hnet2'
+	list   network		'hnet3'
 	option input		ACCEPT
 	option output		ACCEPT
 	option forward		ACCEPT
