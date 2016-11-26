@@ -6,7 +6,7 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config globals 'globals'
-	option ula_prefix 'fd49:a7d2:6e5a::/48'
+	option ula_prefix ''
 
 config device 'lan_dev'
 	option name 'eth0.1'
