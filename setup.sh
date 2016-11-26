@@ -50,8 +50,8 @@ fi
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo " FreeMesh is prepared. To build the firmware, type:"
-echo " cd build"
+echo " cd $1_freemesh"
 echo " make menuconfig #If you wish to add or change packages."
 echo " make V=s"
 echo " "
-echo " All build outputs will be build/bin."
+echo " All build outputs will be $1_freemesh/bin."
