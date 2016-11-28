@@ -9,11 +9,11 @@ config wifi-device  radio0
 
 config wifi-iface
 	option device   radio0
-	option network  lan
+	option network  meshbridge
 	option mode     ap
-	option ssid     testnet1
+	option ssid     FreeMesh
 	option encryption psk2
-	option key	testnet1
+	option key	FreeMesh
 
 config wifi-device  radio1
 	option type     mac80211
@@ -28,7 +28,7 @@ config wifi-iface
 	option device   radio1
 	option network  mesh
 	option mode     adhoc
-	option ssid     testnet
+	option ssid     FreeMesh-Backhaul
 	option encryption none
 	option bssid	'02:CA:FF:EE:BA:BE'
 
