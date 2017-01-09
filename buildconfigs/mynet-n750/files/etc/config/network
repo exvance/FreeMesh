@@ -9,11 +9,11 @@ config globals 'globals'
 	option ula_prefix 'fdea:9a9c:c7e6::/48'
 
 config interface 'lan'
-	option ifname 'eth0.1'
+	option ifname 'eth0.1 bat0'
 	option force_link '1'
 	option type 'bridge'
 	option proto 'static'
-	option ipaddr '10.0.0.1'
+	list ipaddr '192.168.2.254'
 	option netmask '255.255.255.0'
 	option ip6assign '60'
 
@@ -41,6 +41,8 @@ config switch_vlan
 	option ports '0t 5'
 
 config interface 'mesh'
-	option proto 'static'
-	option ipaddr '172.16.1.1'
-	option netmask '255.255.255.0'
+	option mtu '1532'
+	option proto 'batadv'
+	option mesh 'bat0'
+	option routing_algo 'BATMAN_V'
+

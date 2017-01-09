@@ -1,6 +1,6 @@
 
 config system
-	option hostname 'testnet1'
+	option hostname 'freemesh1'
 	option timezone 'UTC'
 	option ttylogin '0'
 	option log_size '64'

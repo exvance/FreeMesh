@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+
+START=99 
+STOP=99 
+
+start() {
+        /usr/share/freemesh/Startup.sh
+}
+
+stop() {
+        echo stop
+        # commands to kill application
+}
